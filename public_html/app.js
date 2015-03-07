@@ -57,7 +57,7 @@ ds.on("push", function(data) {
 });
 
 // 興味選択開始
-$('#kyoumiList li').on("tap", function(e) {
+$('#kyoumiList li').on("down", function(e) {
     console.log("touchstart: " + $(e.target).text());
     ds.push({
         state: "UP",
@@ -67,7 +67,7 @@ $('#kyoumiList li').on("tap", function(e) {
 
 // 興味選択終わり
 // ボタンを押してる間光るようにtouchendで光るのをやめる
-$("#kyoumiList li").on("tap", function(e) {
+$("#kyoumiList li").on("up", function(e) {
     console.log("touchend: " + $(e.target).text());
     ds.push({
         state: "DOWN",
