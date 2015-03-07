@@ -46,13 +46,13 @@ ds.on("push", function(data) {
             // upが来て興味をもってればピンを光らせる
             k.digitalWrite(PIN, UP);
         }
-        console.log(data.value.key);
+        console.log("UP: " + data.value.key);
     } else {
         if (user.length === 0 || $.inArray(data.value.key, user)) {
             // downが来て興味をもってればピンを光らせる
             k.digitalWrite(PIN, DOWN);
         }
-        console.log(data.value.key);
+        console.log("DOWN: " + data.value.key);
     }
 });
 
