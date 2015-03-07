@@ -54,11 +54,11 @@ ds.on("push", function(data) {
         }
         console.log(data.value.key);
     }
-    $('#debug').append($('<div>').text(data.value.state));
 });
 
 // 興味選択開始
-$('.syumiList li').on("touchstart", function(e) {
+$('#kyoumiList li').on("tap", function(e) {
+    console.log("touchstart: " + $(e.target).text());
     ds.push({
         state: "UP",
         key: $(e.target).text(),
@@ -67,7 +67,8 @@ $('.syumiList li').on("touchstart", function(e) {
 
 // 興味選択終わり
 // ボタンを押してる間光るようにtouchendで光るのをやめる
-$(".syumiList li").on("touchend", function(e) {
+$("#kyoumiList li").on("tap", function(e) {
+    console.log("touchend: " + $(e.target).text());
     ds.push({
         state: "DOWN",
         key: $(e.target).text(),
@@ -76,7 +77,7 @@ $(".syumiList li").on("touchend", function(e) {
 
 // ページ遷移とページ行き過ぎ抑止
 var maxPageNum = $("section").length - 1;
-$(".next_btn").on("touchstart", function() {
+$(".next_btn").on("tap", function() {
     var pages = $("core-animated-pages")[0];
     if (pages.selected < maxPageNum) {
         pages.selected += 1;
