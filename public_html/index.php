@@ -34,7 +34,6 @@
 </core-animated-pages>
 
 
-
 <script type="text/javascript" src="./app.js"></script>
 </body>
 </html>

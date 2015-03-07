@@ -1,3 +1,5 @@
+<div id="profilePage">
+
 <h1>あなたの情報</h1>
 <p>この情報でOK？</p>
 
@@ -79,4 +81,4 @@ for(var n = 0;n<=120;n++){
     }
 }
 </script>
-
+</div>

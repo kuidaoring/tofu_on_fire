@@ -1,8 +1,5 @@
+<div id="kyoumiList">
 <h1>あなたの趣味は？</h1>
-
-
-<div class="syumiList">
-
 
 <h2>趣味</h2>
 
