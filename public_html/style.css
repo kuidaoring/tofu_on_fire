@@ -1,0 +1,45 @@
+@charset utf-8;
+
+body {
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  user-select: none;
+}
+h2 {
+margin: 10px;
+}
+select{
+display: block;
+width: 90%;
+height: 40px;
+margin: 0 auto;
+border: 1px solid #000;
+font-size: 16px;
+background: #fff;
+border-radius: 0;
+}
+.syumiList h3:nth-child(2) {
+border-top: 1px solid #999;
+}
+ul {
+margin: 0;
+padding: 0;
+}
+.syumiList h3,
+.syumiList li{
+margin: 0;
+padding: 10px 15px;
+list-style: none;
+font-size: 18px;
+border-bottom: 1px solid #999;
+}
+.syumiList h3{
+background-color: #ccc;
+}
+.syumiList li{
+padding-left: 25px;
+}
+
