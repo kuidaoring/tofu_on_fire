@@ -19,32 +19,37 @@ var USERS = {
 };
 var user = USERS.yuujsato;
 
+// konashiの初期化と端末の発見
 k.ready(function() {
     k.digitalWrite(PIN, DOWN);
 });
-
 k.find();
+
+
+
+// milkcocoa初期化
 var milkcocoa_app_id = 'io-ji6yr5qe9';
 var milkcocoa = new MilkCocoa("https://" + milkcocoa_app_id + ".mlkcca.com/");
 var ds = milkcocoa.dataStore("message");
 
-//まるっと削除
+// milkcocoaから不要なデータをまるっと削除
 ds.query().done(function(data) {
     data.forEach(function(value) {
         ds.remove(value.id);
     });
 });
 
-
 //リアルタイムに変更を監視
 ds.on("push", function(data) {
     if (data.value.state && data.value.state === "UP"){
         if (user.length === 0 || $.inArray(data.value.key, user)) {
+            // upが来て興味をもってればピンを光らせる
             k.digitalWrite(PIN, UP);
         }
         console.log(data.value.key);
     } else {
         if (user.length === 0 || $.inArray(data.value.key, user)) {
+            // downが来て興味をもってればピンを光らせる
             k.digitalWrite(PIN, DOWN);
         }
         console.log(data.value.key);
@@ -52,6 +57,7 @@ ds.on("push", function(data) {
     $('#debug').append($('<div>').text(data.value.state));
 });
 
+// 興味選択開始
 $('.syumiList li').on("touchstart", function(e) {
     ds.push({
         state: "UP",
@@ -59,6 +65,8 @@ $('.syumiList li').on("touchstart", function(e) {
     });
 });
 
+// 興味選択終わり
+// ボタンを押してる間光るようにtouchendで光るのをやめる
 $(".syumiList li").on("touchend", function(e) {
     ds.push({
         state: "DOWN",
@@ -66,8 +74,13 @@ $(".syumiList li").on("touchend", function(e) {
     });
 });
 
+// ページ遷移とページ行き過ぎ抑止
+var maxPageNum = $("section").length - 1;
 $(".next_btn").on("touchstart", function() {
-    document.querySelector("core-animated-pages").selected += 1;
+    var pages = $("core-animated-pages")[0];
+    if (pages.selected < maxPageNum) {
+        pages.selected += 1;
+    }
 });
 
 });
