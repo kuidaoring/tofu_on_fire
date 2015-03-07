@@ -1,15 +1,3 @@
-<!DOCTYPE html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<title>イルミなふだ</title>
-<meta name="viewport" content="width=device-width,initial-scale=1.0">
-<meta name="format-detection" content="telephone=no">
-<link rel="stylesheet" href="style.css">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-<meta>
-</head>
-<body>
 <h1>あなたの情報</h1>
 <p>この情報でOK？</p>
 
@@ -89,7 +77,4 @@ for(var n = 0;n<=120;n++){
     }
 }
 </script>
-
-</body>
-</html>
 
