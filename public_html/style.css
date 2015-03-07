@@ -12,6 +12,13 @@ h2 {
 margin: 10px;
 color: #999;
 }
+ul {
+margin: 0;
+padding: 0;
+}
+p {
+margin: 5px .5em;
+}
 select{
 display: block;
 width: 90%;
@@ -22,25 +29,32 @@ font-size: 16px;
 background: #fff;
 border-radius: 0;
 }
-.syumiList h3:nth-child(2) {
+.disable{
+display: none;
+}
+button{
+width: 85%;
+display: block;
+margin: 10px auto;
+height: 40px;
+font-size: 18px;
+border: 1px solid #333;
+}
+#kyoumiList h3:nth-child(2) {
 border-top: 1px solid #999;
 }
-ul {
-margin: 0;
-padding: 0;
-}
-.syumiList h3,
-.syumiList li{
+#kyoumiList h3,
+#kyoumiList li{
 margin: 0;
 padding: 10px 15px;
 list-style: none;
 font-size: 18px;
 border-bottom: 1px solid #999;
 }
-.syumiList h3{
+#kyoumiList h3{
 background-color: #ccc;
 }
-.syumiList li{
+#kyoumiList li{
 padding-left: 25px;
 }
 

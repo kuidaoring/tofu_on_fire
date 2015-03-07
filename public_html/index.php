@@ -14,6 +14,11 @@
 </head>
 <body>
 
+<script>
+window.onload = function(){
+$("#profilePage").removeClass("disable");
+}
+</script>
 
 <!-- プロフィール入力 -->
 <?php include("profile.php"); ?>
