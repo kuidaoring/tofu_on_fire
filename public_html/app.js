@@ -66,4 +66,8 @@ $(".syumiList li").on("touchend", function(e) {
     });
 });
 
+$(".next_btn").on("touchstart", function() {
+    document.querySelector("core-animated-pages").selected += 1;
+});
+
 });

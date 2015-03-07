@@ -68,6 +68,8 @@
 <h2>年齢</h2>
 <select id="nenrei"></select>
 
+<button class="next_btn">次へ</button>
+
 <script>
 for(var n = 0;n<=120;n++){
     if(n == 28){
