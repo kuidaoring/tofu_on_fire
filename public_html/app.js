@@ -13,18 +13,26 @@ var USERS = {
         kinadu: [],
         yeshi: [
             "フォクすけ",
+            "JavaScript",
         ],
         yuujsato: [
+            "JavaScript",
+            "ビール",
         ]
 };
-var user = USERS.yuujsato;
+var user = USERS.kinadu;
+
+if (location.href.match(/yeshi$/)) {
+    user = USERS.yeshi;
+} else if (location.href.match(/yuujsato$/)) {
+    user = USERS.yuujsato;
+}
 
 // konashiの初期化と端末の発見
 k.ready(function() {
     k.digitalWrite(PIN, DOWN);
 });
 k.find();
-
 
 
 // milkcocoa初期化
@@ -42,15 +50,29 @@ ds.query().done(function(data) {
 //リアルタイムに変更を監視
 ds.on("push", function(data) {
     if (data.value.state && data.value.state === "UP"){
-        if (user.length === 0 || $.inArray(data.value.key, user)) {
+        if (user.length === 0){
+            console.log("match all");
             // upが来て興味をもってればピンを光らせる
             k.digitalWrite(PIN, UP);
+        } else if($.inArray(data.value.key, user) !== -1) {
+            // upが来て興味をもってればピンを光らせる
+            console.log("match user");
+            k.digitalWrite(PIN, UP);
+        } else {
+            console.log("no match");
         }
         console.log("UP: " + data.value.key);
     } else {
-        if (user.length === 0 || $.inArray(data.value.key, user)) {
+        if (user.length === 0) {
+            console.log("match all");
             // downが来て興味をもってればピンを光らせる
             k.digitalWrite(PIN, DOWN);
+        } else if($.inArray(data.value.key, user) !== -1) {
+            console.log("match user");
+            // downが来て興味をもってればピンを光らせる
+            k.digitalWrite(PIN, DOWN);
+        } else {
+            console.log("no match");
         }
         console.log("DOWN: " + data.value.key);
     }
@@ -61,7 +83,7 @@ $('#kyoumiList li').on("down", function(e) {
     console.log("touchstart: " + $(e.target).text());
     ds.push({
         state: "UP",
-        key: $(e.target).text(),
+        key: $(e.target).text().replace(/♥/, ''),
     });
 });
 
@@ -71,7 +93,7 @@ $("#kyoumiList li").on("up", function(e) {
     console.log("touchend: " + $(e.target).text());
     ds.push({
         state: "DOWN",
-        key: $(e.target).text(),
+        key: $(e.target).text().replace(/♥/, ''),
     });
 });
 
