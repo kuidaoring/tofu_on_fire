@@ -16,6 +16,11 @@ ul {
 margin: 0;
 padding: 0;
 }
+li{
+margin: 0;
+padding: 0;
+list-style: none;
+}
 p {
 margin: 5px .5em;
 }
@@ -47,7 +52,6 @@ border-top: 1px solid #999;
 #kyoumiList li{
 margin: 0;
 padding: 10px 15px;
-list-style: none;
 font-size: 18px;
 border-bottom: 1px solid #999;
 }
@@ -58,3 +62,17 @@ background-color: #ccc;
 padding-left: 25px;
 }
 
+#tabMenu{
+display: -webkit-flex;
+display: flex;
+border-top: 1px solid #333;
+}
+#tabMenu li{
+height: 56px;
+line-height: 56px;
+text-align: center;
+flex:1;
+}
+#tabMenu li:first-child {
+border-right: 1px solid #333;
+}
