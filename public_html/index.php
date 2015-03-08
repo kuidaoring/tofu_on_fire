@@ -36,10 +36,33 @@
 <section class="core-selected">
 <!-- 興味リスト -->
 <?php include("kyoumiList.php"); ?>
+<?php include("personList.php"); ?>
+<?php include("tabMenu.php"); ?>
+
+<script>
+$("#kyoumiList").css("height",window.innerHeight - 64);
+$("#personList").css("height",window.innerHeight - 64);
+$("#kyoumiList li").append("<span class='likeBtn'>♥</span>");
+
+$("#tabMenu li").on("click",function(){
+    $("#tabMenu li").removeClass("cur");
+    $(this).addClass("cur");
+    if($("#personList").hasClass("disable")){
+        $("#personList").removeClass("disable");
+        $("#kyoumiList").addClass("disable");
+    }else{
+        $("#personList").addClass("disable");
+        $("#kyoumiList").removeClass("disable");
+    }
+});
+
+
+
+</script>
+
 </section>
 
 <section>
-<?php include("personList.php"); ?>
 </section>
 
 

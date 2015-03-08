@@ -161,19 +161,5 @@
     <li>恋人募集中</li>
     <li>友達募集中</li>
 </ul>
-
-
 </div><!-- /.syumiList -->
 
-<script>
-$("#kyoumiList").css("height",window.innerHeight - 64);
-
-
-$("#kyoumiList li").append("<span class='likeBtn'>♥</span>");
-
-
-</script>
-
-
-
-<?php include("tabMenu.php"); ?>

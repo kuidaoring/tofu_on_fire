@@ -1,4 +1,4 @@
-<ul id="personList">
+<ul id="personList" class="disable">
 <li class="person">
 <p class="image"><img src=""></p>
 <p class="name"></p>
@@ -12,6 +12,4 @@
 </ul>
 </li>
 </ul>
-
-<?php include("tabMenu.php"); ?>
 
