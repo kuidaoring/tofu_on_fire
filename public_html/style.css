@@ -7,7 +7,8 @@ font-family: sans-serif;
 -webkit-user-select: none;
 -moz-user-select: none;
 user-select: none;
-background: url(image/VD2.png) no-repeat;
+background: url(image/VD2.png) no-repeat fixed;
+background-size: cover;
 color: #fff;
 }
 h1 {
@@ -99,27 +100,55 @@ border-radius: 4px;
 #kyoumiList h3:nth-child(2) {
 border-top: 1px solid #999;
 }
-#kyoumiList h3,
-#kyoumiList li{
-margin: 0;
-padding: 10px 15px;
-font-size: 18px;
-border-bottom: 1px solid #999;
-}
 #kyoumiList h3{
-background-color: #ccc;
+display: none;
+}
+#kyoumiList{
+overflow: auto;
+}
+#kyoumiList li{
+position: relative;
+margin: 10px 15px 20px 65px;
+padding: 10px 4px;
+font-size: 20px;
+background: rgba(208,208,208,.8);
+color: #444;
+border-radius: 3px;
 }
 #kyoumiList li{
 padding-left: 25px;
 }
 
+#kyoumiList li .likeBtn{
+position: absolute;
+top:0;
+left:-45px;
+color: rgba(208,208,208,.8);
+font-size: 32px;
+}
+
+#kyoumiList li.like{
+background: rgba(251,54,64,0.8);
+color: #fff;
+}
+#kyoumiList li.like .likeBtn{
+color: rgba(251,54,64,0.8);
+}
+
+
+
 #tabMenu{
 display: -webkit-flex;
 display: flex;
 border-top: 1px solid #333;
+position: fixed;
+bottom:0;
+left:0;
+width: 100%;
+font-size: 20px;
 }
 #tabMenu li{
-height: 56px;
+height: 64px;
 line-height: 56px;
 text-align: center;
 flex:1;

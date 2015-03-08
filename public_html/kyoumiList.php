@@ -1,13 +1,11 @@
 <div id="kyoumiList">
 <h1>あなたの趣味は？</h1>
 
-<h2>趣味</h2>
-
 
 <h3>ゲーム</h3>
 <ul>
     <li>モンスト</li>
-    <li>パズドラ</li>
+    <li class="like">パズドラ</li>
     <li>黒ウィズ</li>
     <li>脱出ゲーム</li>
     <li>LINEつむつむ</li>
@@ -166,5 +164,16 @@
 
 
 </div><!-- /.syumiList -->
+
+<script>
+$("#kyoumiList").css("height",window.innerHeight - 64);
+
+
+$("#kyoumiList li").append("<span class='likeBtn'>♥</span>");
+
+
+</script>
+
+
 
 <?php include("tabMenu.php"); ?>

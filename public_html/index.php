@@ -27,13 +27,13 @@
 <?php include("start.php"); ?>
 </section>
 
-<section class="core-selected">
+<section class="disable">
 <!-- プロフィール入力 -->
 <?php include("profile.php"); ?>
 </section>
 
 
-<section>
+<section class="core-selected">
 <!-- 興味リスト -->
 <?php include("kyoumiList.php"); ?>
 </section>
