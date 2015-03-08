@@ -116,8 +116,6 @@ background: rgba(208,208,208,.8);
 color: #222;
 border-radius: 4px;
 }
-#kyoumiList li{
-}
 
 #kyoumiList li .likeBtn{
 position: absolute;
@@ -133,6 +131,65 @@ color: #fff;
 }
 #kyoumiList li.like .likeBtn{
 color: rgba(251,54,64,0.8);
+}
+
+
+#personList li.person{
+position: relative;
+margin: 5px 0;
+padding: 10px 4px;
+font-size: 20px;
+font-weight: bold;
+background: rgba(208,208,208,.8);
+color: #222;
+}
+#personList .hito{
+display: -webkit-flex;
+display: flex;
+}
+#personList .name{
+font-size: 24px;
+}
+#personList .kyoumi{
+margin-left: 5px;
+}
+#personList .kyoumi li{
+color: #666;
+font-size: 15px;
+display: inline;
+}
+
+#personList .account{
+position: absolute;
+right: 15px;
+top:15px;
+}
+#personList .account li{
+width: 24px;
+height: 24px;
+padding: 5px;
+background-size: 24px;
+text-indent: -9999px;
+overflow: hidden;
+display: inline-block;
+background-repeat: no-repeat;
+background-position: 50%;
+box-sizing:content-box;
+}
+#personList .account li.tw{
+background-image: url(image/Twitter.png);
+background-color: #67aadd;
+color: #fff;
+}
+#personList .account li.fb{
+background-image: url(image/Facebook.png);
+background-color: #3b5998;
+color: #fff;
+}
+#personList .account li.gh{
+background-image: url(image/Github.png);
+background-color: #FFF;
+color: #333;
 }
 
 
