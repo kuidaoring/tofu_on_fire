@@ -4,7 +4,7 @@
 
 <div id="tw" class="loginBtn"><img width="36px" src="image/Twitter.png">Twitterログイン</div>
 <div id="fb" class="loginBtn"><img width="36px" src="image/Facebook.png">Facebookログイン</div>
-<div id="gh" class="loginBtn"><img width="36px" src="image/Github">Githubログイン</div>
+<div id="gh" class="loginBtn"><img width="36px" src="image/Github.png">Githubログイン</div>
 
 </div>
 

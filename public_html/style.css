@@ -8,14 +8,43 @@ font-family: sans-serif;
 -moz-user-select: none;
 user-select: none;
 background: url(image/VD2.png) no-repeat;
+color: #fff;
+}
+h1 {
+color: #fff;
+border-bottom: 1px solid rgba(255,255,255,.8);
+text-align: center;
+margin: 0;
+padding: 10px;
+font-size: 32px;
+}
+h2 {
+margin: 10px;
+color: #ddd;
+}
+ul {
+margin: 0;
+padding: 0;
+}
+li{
+margin: 0;
+padding: 0;
+list-style: none;
+}
+p {
+margin: 5px .5em;
+text-align: center;
+font-size: 18px;
 }
 #startGamen h1{
 width: 300px;
 height: 350px;
 margin: 0 auto;
+padding: 0;
 background: url(image/logo.png) no-repeat;
 background-size: contain;
 text-indent: -9999px;
+border: none;
 }
 #startGamen .loginBtn{
 margin: 0 auto 15px;
@@ -42,30 +71,14 @@ background-color: #FFF;
 color: #333;
 }
 
-h2 {
-margin: 10px;
-color: #999;
-}
-ul {
-margin: 0;
-padding: 0;
-}
-li{
-margin: 0;
-padding: 0;
-list-style: none;
-}
-p {
-margin: 5px .5em;
-}
 select{
 display: block;
 width: 90%;
-height: 40px;
+height: 48px;
 margin: 0 auto;
 border: 1px solid #000;
-font-size: 16px;
-background: #fff;
+font-size: 24px;
+background: rgba(255,255,255,.7);
 border-radius: 0;
 }
 .disable{
@@ -74,10 +87,14 @@ display: none;
 button{
 width: 85%;
 display: block;
-margin: 10px auto;
-height: 40px;
-font-size: 18px;
+margin: 15px auto;
+height: 48px;
+font-size: 24px;
 border: 1px solid #333;
+background: #15ca66;
+color: #fff;
+font-weight: bold;
+border-radius: 4px;
 }
 #kyoumiList h3:nth-child(2) {
 border-top: 1px solid #999;

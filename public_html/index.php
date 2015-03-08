@@ -22,12 +22,12 @@
 
 <core-animated-pages transitions="slide-from-right">
 
-<section class="core-selected">
+<section class="disable">
 <!-- スプラッシュ画面 -->
 <?php include("start.php"); ?>
 </section>
 
-<section>
+<section class="core-selected">
 <!-- プロフィール入力 -->
 <?php include("profile.php"); ?>
 </section>
