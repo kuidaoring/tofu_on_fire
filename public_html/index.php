@@ -22,18 +22,18 @@
 
 <core-animated-pages transitions="slide-from-right">
 
-<section class="disable">
+<section class="core-selected">
 <!-- スプラッシュ画面 -->
 <?php include("start.php"); ?>
 </section>
 
-<section class="disable">
+<section>
 <!-- プロフィール入力 -->
 <?php include("profile.php"); ?>
 </section>
 
 
-<section class="core-selected">
+<section>
 <!-- 興味リスト -->
 <?php include("kyoumiList.php"); ?>
 <?php include("personList.php"); ?>
