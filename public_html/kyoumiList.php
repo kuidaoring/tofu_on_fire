@@ -6,6 +6,31 @@
 <ul>
     <li>モンスト</li>
     <li class="like">パズドラ</li>
+    <li class="like">ビール</li>
+    <li>イングレス</li>
+    <li class="like">JavaScript</li>
+    <li class="like">フォクすけ</li>
+    <li>iOS開発</li>
+    <li>Android開発</li>
+    <li>React</li>
+    <li>ポケモン</li>
+    <li>AKB48</li>
+    <li>ねこあつめ</li>
+    <li>ももクロ</li>
+    <li>Perfume</li>
+    <li>モンハン</li>
+    <li>艦これ</li>
+    <li>Firefox OS開発</li>
+</ul>
+    <li>Tizen開発</li>
+    <li>Windows開発</li>
+
+<h3>アニメ・漫画</h3>
+<ul>
+    <li>パチンコ</li>
+    <li>囲碁</li>
+    <li>将棋</li>
+    <li>ゼルダ</li>
     <li>黒ウィズ</li>
     <li>脱出ゲーム</li>
     <li>LINEつむつむ</li>
@@ -13,19 +38,6 @@
     <li>FF</li>
     <li>ドラクエ</li>
     <li>ぷよぷよ</li>
-    <li>イングレス</li>
-    <li>ねこあつめ</li>
-    <li>ポケモン</li>
-    <li>ゼルダ</li>
-    <li>モンハン</li>
-    <li>艦これ</li>
-    <li>パチンコ</li>
-    <li>囲碁</li>
-    <li>将棋</li>
-</ul>
-
-<h3>アニメ・漫画</h3>
-<ul>
     <li>深夜アニメ</li>
     <li>腐女子・BL</li>
     <li>ワンピース</li>
@@ -44,9 +56,6 @@
 
 <h3>芸能・エンタメ</h3>
 <ul>
-    <li>AKB48</li>
-    <li>ももクロ</li>
-    <li>Perfume</li>
     <li>きゃりーぱみゅぱみゅ</li>
     <li>山本一郎</li>
     <li>ジャニーズ</li>
@@ -62,14 +71,6 @@
 <h3>技術・IT</h3>
 <ul>
     <li>Github</li>
-    <li>フォクすけ</li>
-    <li>iOS開発</li>
-    <li>Android開発</li>
-    <li>Firefox OS開発</li>
-    <li>Tizen開発</li>
-    <li>Windows開発</li>
-    <li>React</li>
-    <li>JavaScript</li>
     <li>Perl</li>
     <li>Ruby</li>
     <li>Python</li>
@@ -144,7 +145,6 @@
     <li>ワイン</li>
     <li>ウイスキー</li>
     <li>カクテル</li>
-    <li>ビール</li>
 </ul>
 
 <h3>教養</h3>

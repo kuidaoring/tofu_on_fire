@@ -103,7 +103,8 @@ border-top: 1px solid #999;
 #kyoumiList h3{
 display: none;
 }
-#kyoumiList{
+#kyoumiList,
+#personList{
 overflow: auto;
 -webkit-overflow-scrolling: touch; 
 }
