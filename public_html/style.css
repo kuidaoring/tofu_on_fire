@@ -7,7 +7,41 @@ font-family: sans-serif;
 -webkit-user-select: none;
 -moz-user-select: none;
 user-select: none;
+background: url(image/VD2.png) no-repeat;
 }
+#startGamen h1{
+width: 300px;
+height: 350px;
+margin: 0 auto;
+background: url(image/logo.png) no-repeat;
+background-size: contain;
+text-indent: -9999px;
+}
+#startGamen .loginBtn{
+margin: 0 auto 15px;
+width: 80%;
+height: 52px;
+line-height: 52px;
+border-radius: 4px;
+text-align: center;
+}
+#startGamen .loginBtn img{
+vertical-align: middle;
+padding-right: 10px;
+}
+#startGamen .loginBtn#tw{
+background-color: #67aadd;
+color: #fff;
+}
+#startGamen .loginBtn#fb{
+background-color: #3b5998;
+color: #fff;
+}
+#startGamen .loginBtn#gh{
+background-color: #FFF;
+color: #333;
+}
+
 h2 {
 margin: 10px;
 color: #999;

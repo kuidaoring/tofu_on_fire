@@ -21,7 +21,13 @@
 <body unresolved touch-action="pan-y">
 
 <core-animated-pages transitions="slide-from-right">
+
 <section class="core-selected">
+<!-- スプラッシュ画面 -->
+<?php include("start.php"); ?>
+</section>
+
+<section>
 <!-- プロフィール入力 -->
 <?php include("profile.php"); ?>
 </section>
@@ -31,6 +37,12 @@
 <!-- 興味リスト -->
 <?php include("kyoumiList.php"); ?>
 </section>
+
+<section>
+<?php include("personList.php"); ?>
+</section>
+
+
 </core-animated-pages>
 
 <script type="text/javascript" src="./app.js"></script>
