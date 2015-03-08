@@ -77,7 +77,7 @@ $("#kyoumiList li").on("up", function(e) {
 
 // ページ遷移とページ行き過ぎ抑止
 var maxPageNum = $("section").length - 1;
-$(".next_btn").on("tap", function() {
+$(".next_btn,.loginBtn").on("tap", function() {
     var pages = $("core-animated-pages")[0];
     if (pages.selected < maxPageNum) {
         pages.selected += 1;
