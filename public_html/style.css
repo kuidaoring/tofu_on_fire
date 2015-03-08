@@ -207,6 +207,7 @@ font-size: 20px;
 height: 64px;
 line-height: 56px;
 text-align: center;
+-webkit-flex:1;
 flex:1;
 background: rgba(255,255,255,.3);
 }
