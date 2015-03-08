@@ -5,6 +5,7 @@
 <title>イルミなふだ</title>
 <meta name="viewport" content="width=device-width,initial-scale=1.0">
 <meta name="format-detection" content="telephone=no">
+<meta name="apple-mobile-web-app-capable" content="yes">
 <link rel="stylesheet" href="./style.css">
 <script type="text/javascript" src="http://konashi.ux-xu.com/kjs/konashi-bridge.min.js"></script>
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/async/0.9.0/async.js"></script>
