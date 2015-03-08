@@ -61,7 +61,7 @@ $('#kyoumiList li').on("down", function(e) {
     console.log("touchstart: " + $(e.target).text());
     ds.push({
         state: "UP",
-        key: $(e.target).text(),
+        key: $(e.target).text().replace(/♥/, ''),
     });
 });
 
@@ -71,7 +71,7 @@ $("#kyoumiList li").on("up", function(e) {
     console.log("touchend: " + $(e.target).text());
     ds.push({
         state: "DOWN",
-        key: $(e.target).text(),
+        key: $(e.target).text().replace(/♥/, ''),
     });
 });
 
